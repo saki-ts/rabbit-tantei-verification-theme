@@ -1,0 +1,29 @@
+doctype html
+html(lang="ja")
+  include _element/_head.pug
+
+  body.contact
+    .allwrapper
+      include _element/_header.pug
+
+      main.m
+        section.section
+          header.section__header
+            h1.section__ttl.section__ttl--complete
+              | Contact
+              span.section__ttl-ja お問い合わせ
+            .section__header-msg
+              .section__header-icon: include ../image/icon_form-complete.svg
+              h2 お問い合わせ送信完了
+            .section__header-text.section__header-text--complete
+              p
+                | お問い合わせいただきありがとうございます。
+                br
+                | 後日、担当者からご連絡させていただきます。
+          .section__body
+            .form
+              .form__btn.form__btn--complete
+                .form__btn-wrapper
+                  a.btn.btn--link(href='./') TOPに戻る
+
+    include _element/_footer.pug

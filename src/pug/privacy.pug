@@ -1,0 +1,47 @@
+- var page_title = privacy;
+doctype html
+html(lang="ja")
+  include _element/_head.pug
+
+  body.privacy
+    .allwrapper
+      include _element/_header.pug
+
+      main.m
+        section.section
+          h1.branch_main_title Privacy policy
+            span.branch_main_title--sub プライバシーポリシー
+
+          p.privacy__text 株式会社DEMO Inc.（以下、当社）は、当社における個人情報の取扱いに関し、個人情報の保護に関する法律その他の関係法令（以下「個人情報保護法等」といいます。）を遵守するとともに、下記のとおりプライバシーポリシーを定め、その適切な取り扱いに努めています。
+
+          h2.privacy__contents_title 1.個人情報の取得
+          p.privacy__text 当社は、個人情報を適正な手段により取得します。
+          
+          h2.privacy__contents_title 2.個人情報の利用目的
+          p.privacy__text 当社は、個人情報を、以下の目的で利用します。 個人情報保護法等により認められる事由がある場合を除き、ご本人の同意がない限り、この範囲を超えて個人情報を利用することはありません。
+            br
+            | ①各種案内及び挨拶の送付又は送信
+            br
+            | ②お問い合わせへの対応
+            br
+            | ③その他上記の利用目的に付随する目的
+          
+          h2.privacy__contents_title 3.個人情報の第三者提供
+          p.privacy__text 当社は、個人情報の第三者提供については、個人情報保護法等を遵守します。
+
+          h2.privacy__contents_title 4.個人情報の安全管理
+          p.privacy__text 当社は、個人情報を、事務所内の運営体制及び職員の教育を通じて、適切に管理し、個人情報の漏洩、滅失、毀損等といった事態が発生しないように 努めます。
+
+          h2.privacy__contents_title 5.個人情報の利用目的の通知、開示、訂正、利用停止等の請求
+          p.privacy__text 当社は、個人情報について、開示、訂正、追加、削除、利用停止、消去、第三者提供の停止又は利用目的の通知に係るご本人からのお申出があった場合 には、お申出頂いた方がご本人であることを確認の上、個人情報保護法等の定めに従い、誠実に対応します。
+
+          h3.privacy__contents_title 【お問い合わせ窓口】
+          address.privacy__text.privacy__info 株式会社DEMO Inc.
+            br
+            | TEL 01-1234-5678
+            br
+            | 受付時間 平日
+            time(datetime="!{info.opentime}-!{info.closetime}") !{info.opentime}～!{info.closetime}
+            br
+            | ※年末年始・夏季休業（お盆周辺）を除く
+    include _element/_footer.pug

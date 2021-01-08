@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import "../foundation/_import";
+
+/***************************************
+
+Footer
+
+***************************************/
+
+.f {
+  background: $color-footer;
+  &_container {
+    padding: 64px 0;
+
+    @include mq() {
+      padding: 72px 0;
+    }
+  }
+
+  &_head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+
+    @include mq() {
+      display: block;
+      margin-bottom: 72px;
+    }
+
+    &__info {
+      margin-right: 20px;
+    }
+
+    &__logo {
+      display: block;
+      font-size:24px;
+      color: $color-white;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+      text-decoration: none;
+      font-weight: 700;
+
+      @include mq {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &_address {
+    @include mq() {
+      margin-bottom: 40px;
+    }
+    &__text {
+      color: $color-white;
+
+      &--postal_code {
+        display: inline-block;
+        margin-right: 1em;
+
+        @include mq() {
+          display: block;
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__link {
+      color: $color-white;
+      text-decoration: underline;
+      &:hover,&:focus {
+        opacity: 0.5;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &_nav {
+    @include mq() {
+      margin-bottom: 72px;
+    }
+    &__list {
+      display: flex;
+
+      @include mq() {
+        display: block;
+      }
+    }
+    &__item {
+      margin-right: 48px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a {
+      color: $color-white;
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.2rem;
+
+      @include mq() {
+        padding: 16px 0;
+      }
+      &:hover,&:focus {
+        opacity: 0.5;
+        text-decoration: none;
+      }
+    }
+    // ******************
+    // メニューサブテキスト
+    // ******************
+    &__sub_text {
+      display: block;
+      font-size: 12px;
+      opacity: 0.5;
+    }
+  }
+
+  &_bottom {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    @include mq() {
+      justify-content: flex-start;
+      flex-flow: column-reverse;
+      flex-wrap:wrap;
+    }
+  }
+
+  &_copy {
+    color: $color-white;
+    font-size: 14px;
+    opacity: 0.5;
+    text-align: center;
+
+    @include mq() {
+      text-align: left;
+      width: 100%;
+    }
+  }
+
+  &_privacy {
+    @include mq() {
+      text-align: left;
+      width: 100%;
+    }
+    &__link {
+      color: $color-white;
+
+      &:hover,&:focus {
+        text-decoration: none;
+        opacity: 0.5;
+      }
+    }
+  }
+}

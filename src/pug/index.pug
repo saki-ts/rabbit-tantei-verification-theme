@@ -1,0 +1,89 @@
+- var page_title = index;
+doctype html
+html(lang="ja")
+  include _element/_head.pug
+
+  body(class="top")
+    .allwrapper
+      include _element/_header.pug
+
+      main.m
+        section.first_view.js-firstview
+          .first_view__list
+            .first_view__item
+              figure.first_view__image_box
+                img.first_view__image.pc_show(src="../image/fv_image@2x.jpg" alt="ファーストビューイメージ")
+                img.first_view__image.sp_show(src="../image/fv_image_sp@2x.jpg" alt="ファーストビューイメージ")
+
+              .container.wrapper.first_view__container
+                h1.first_view__catch Site production
+                  br
+                  | tailored to customers
+                p.first_view__subcatch Design / web template
+          p.first_view__scroller
+            span.first_view__scroller_text Scroll
+
+        section.philosophy.bg_white
+          .container.wrapper
+            h2.philosophy__title
+              p.philosophy__title_text--sub Philosophy
+              p.philosophy__title_text 選び続けられる価値のある
+                br
+                | テーマを提供する
+
+            .philosophy__detail
+              .philosophy__detail_text ここには1行推奨30〜35文字のテキストが入ります。ここには1行推奨30〜35文字のテキストが入ります。
+                br
+                br
+                | ここには1行推奨30〜35文字のテキストが入ります。ここには1行推奨30〜35文字のテキストが入ります。
+                br
+                br
+                | ここには1行推奨30〜35文字のテキストが入ります。ここには1行推奨30〜35文字のテキストが入ります。
+
+              a.main_button(href="about.html") View More
+
+        section.about
+          .about__parallax
+            img.about__parallax_img.pc_show(src="../image/about_parallax@2x.jpg")
+            img.about__parallax_img.sp_show(src="../image/about_parallax_sp2@2x.jpg")
+
+        section#service.service.bg_gray
+          .container.wrapper
+            h2.main_title Service
+              span.main_title--sub 事業内容
+
+            ul.service__card
+              - for (var i = 0; i < 4; i++)
+                li.service_card__item
+                  figure.service_card__image_wrapper
+                    img.service_card__image(src="../image/card_image.jpg", alt="ここに画像が入ります。")
+                  .service_card__body
+                    h3.service_card__title 見出しテキスト
+                    p.service_card__text ここには1行推奨30〜35文字のテキストが入ります。ここには1行推奨30〜35文字のテキストが入ります。
+
+        section#news.news.bg_white
+          .container.wrapper
+            h2.main_title News
+              span.main_title--sub ニュース
+
+            ul.news__list
+              - for (var i = 0; i < 3; i++)
+                li.news_list__item
+                  a.news_list__link(href="#")
+                    time.news_list__date 2020.06.02
+                    p.news_list__text ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+
+            //- a.main_button.news__more_button(href="#") ニュース一覧
+
+        section.contact.theme_color
+          .container.wrapper
+            h2.main_title.main_title--white.contact__title Contact
+              span.main_title--sub お問い合わせ
+
+            p.contact__text お気軽にご相談ください
+
+            a.contact__button(href="contact.html") お問い合わせはコチラ
+
+
+    include _element/_footer.pug
+    script(src=js.top)

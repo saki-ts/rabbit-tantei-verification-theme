@@ -1,0 +1,306 @@
+/***************************************
+
+About
+
+***************************************/
+.about {
+  .m {
+    padding-top: 0;
+  }
+
+  .branch_main_title {
+    margin-bottom: 0;
+  }
+
+  .about {
+    &__header {
+      padding: 180px 0 140px;
+
+      @include mq {
+        padding: 164px 0 96px;
+      }
+    }
+  }
+
+  .about {
+    &_title {
+      color: $color-secondary;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      line-height: 1;
+      margin-bottom: 64px;
+      text-align: center;
+  
+      @include mq() {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+
+      &--sub {
+        color: $color-primary;
+        display: block;
+        font-weight:500;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        margin-top: 1em;
+  
+        @include mq() {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .about__msg {
+    padding: 120px 0;
+
+    @include mq {
+      padding: 72px 0;
+    }
+  }
+
+  .msg {
+    &__body {
+      display: flex;
+      justify-content: center;
+
+      @include mq {
+        display: block;
+      }
+
+      &_img {
+        max-width: 426px;
+        width: 100%;
+        margin-right: 56px;
+
+        @include mq {
+          margin-right: 0;
+          margin-bottom: 32px;
+        }
+      }
+
+      &_dtl {
+        max-width: 482px;
+        width: 100%;
+      }
+
+      &_title {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 32px;
+
+        @include mq {
+          font-size: 18px;
+          line-height: 1.6;
+        }
+      }
+
+      &_text {
+        margin-bottom: 40px;
+
+        @include mq {
+          margin-bottom: 32px;
+        }
+      }
+
+      &_name {
+        font-size: 16px;
+
+        &--position {
+          font-size: 14px;
+          margin-right: 1em;
+        }
+      }
+    }
+  }
+
+  &__parallax {
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+
+    @include mq {
+      height: 220px;
+    }
+
+    &_img {
+      position: fixed;
+      transform: scale(1.2);
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      z-index: -1;
+    }
+  }
+
+  &__company {
+    padding: 120px 0;
+
+    @include mq {
+      padding: 72px 0;
+    }
+  }
+
+  .company {
+    &__container {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 844px;
+      width: 100%;
+    }
+    &__list {
+      align-items: center;
+      border-bottom: 1px solid $color-gray3;
+      display: flex;
+      padding: 24px 0;
+
+      @include mq {
+        display: block;
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+    &__name {
+      font-weight: 700;
+      font-size: 14px;
+      flex: 0 1 80px;
+      margin-right: 90px;
+
+      @include mq {
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__access {
+    padding: 120px 0;
+
+    @include mq {
+     padding: 72px 0;   
+    }
+  }
+
+  .access {
+    &__map {
+      height: 380px;
+      margin-bottom: 48px;
+
+      @include mq {
+        height: 240px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .address {
+    &__head {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__button {
+      font-size: 14px;
+      margin-right: 0;
+      padding: 4px 12px;
+      width: 120px;
+    }
+
+    &__title {
+      color: $color-secondary;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    &__body {
+      @include mq {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__text {
+      font-style: normal;
+    }
+  }
+
+  &__branch {
+    padding: 120px 0 80px;
+
+    @include mq {
+      padding: 72px 0 32px;
+    }
+  }
+
+  .branch {
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap:wrap;
+
+      @include mq {
+        display: block;
+      }
+    }
+
+    &__card {
+      flex: 0 1 48%;
+      margin-right: 4%;
+      margin-bottom: 40px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      @include mq {
+        margin-right: 0;
+      }
+    }
+    &__title {
+      color: $color-primary;
+      font-size: 24px;
+      margin-bottom: 56px;
+
+      @include mq {
+        font-size: 20px;
+      }
+    }
+
+    &__name {
+      color: $color-secondary;
+      font-size: 18px;
+      font-weight: 700;
+
+      @include mq {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__map {
+      height: 270px;
+      margin-bottom: 16px;
+
+      @include mq {
+        height: 240px;
+      }
+    }
+
+    &__address {
+      margin-bottom: 24px;
+    }
+
+    &__button {
+      font-size: 14px;
+      margin-right: 0;
+      padding: 4px 12px;
+      width: 120px;
+    }
+  }
+}

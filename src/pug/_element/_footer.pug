@@ -1,0 +1,37 @@
+footer.f
+  .container.wrapper.f_container
+    .f_head
+      .f_head__info
+        p.f_head__logo 
+          img.f_head__logo_img(src="../image/logo.jpg", alt="LOGO(画像)")
+
+        .f_address
+          p.f_address__text
+            span.f_address__text--postal_code 〒123-4567
+            | 東京都渋谷区渋谷1-1-1オーダービル1F
+          a.f_address__link(href="#") Google map
+
+      nav.f_nav
+        ul.f_nav__list
+          li.f_nav__item
+            a(href="index.html#service") 事業内容
+              // span.f_nav__sub_text text
+          
+          li.f_nav__item
+            a(href="index.html#news") ニュース
+              // span.f_nav__sub_text sub text
+
+          li.f_nav__item
+            a(href="about.html") 会社情報
+              // span.f_nav__sub_text sub text
+
+          li.f_nav__item
+            a(href="contact.html") お問い合わせ
+              // span.f_nav__sub_text sub text
+
+    .f_bottom
+      small.f_copy © 2020 株式会社DEMO Inc.  All Rights Reserved.
+      p.f_privacy
+        a.f_privacy__link(href="privacy.html") プライバシーポリシー
+script(src=js.jquery)
+script(src=js.common)

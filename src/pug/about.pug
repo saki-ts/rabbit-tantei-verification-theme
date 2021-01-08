@@ -1,0 +1,137 @@
+doctype html
+html(lang="ja")
+  include _element/_head.pug
+
+  body(class="about")
+    .allwrapper
+      include _element/_header.pug
+
+      main.m
+        section.about__header.bg_white
+          header.container.wrapper
+            h1.branch_main_title About
+              span.branch_main_title--sub 会社情報
+
+        section.about__msg.bg_gray
+          .container.wrapper
+            h2.about_title Message
+              span.about_title--sub 代表挨拶
+
+            // 宣材写真が不要な場合は<div class="msg__body">に対し、次のクラス名を追加してください。「msg__body--1col」
+            .msg__body
+              figure.msg__body_img
+                img(src="../image/about_msg.jpg", alt="代表写真")
+
+              .msg__body_dtl
+                h3.msg__body_title 課題を発見し、
+                  br.sp_show
+                  | 挑戦し続ける姿勢を大事に
+                p.msg__body_text ここには1行推奨30〜35文字のテキストが入ります。ここには1行推奨30〜35文字のテキストが入ります。ここには1行推奨30〜35文字のテキストが入ります。ここには1行推奨30〜35文字のテキストが入ります。ここには1行推奨30〜35文字のテキストが入ります。
+
+                p.msg__body_name 
+                  span.msg__body_name--position 代表取締役社長
+                  | 小田　一
+
+        section.about__parallax
+          img.about__parallax_img.pc_show(src="../image/about_parallax@2x.jpg")
+          img.about__parallax_img.sp_show(src="../image/about_parallax_sp2@2x.jpg")
+        
+        section.about__company.bg_white
+          .company__container.wrapper
+            h2.about_title Company
+              span.about_title--sub 会社概要
+            .company__body
+              dl.company__list
+                dt.company__name 社名
+                dd.company__dtl 株式会社DEMO Inc.
+              dl.company__list
+                dt.company__name 設立
+                dd.company__dtl 2020年7月
+              dl.company__list
+                dt.company__name 代表取締役
+                dd.company__dtl 小田 一
+              dl.company__list
+                dt.company__name 所在地
+                dd.company__dtl 〒123-4567
+                  br
+                  | 東京都渋谷区渋谷1-1-1オーダービル1F
+              dl.company__list
+                dt.company__name 電話番号
+                dd.company__dtl 01-1234-5678
+              dl.company__list
+                dt.company__name 資本金
+                dd.company__dtl 1億円
+              dl.company__list
+                dt.company__name 事業内容
+                dd.company__dtl Webデザイン事業
+                  br
+                  | WPテーマ制作
+                  br
+                  | (複数可)
+          
+        section.about__access.bg_gray
+          .container.wrapper
+            h2.about_title Access
+              span.about_title--sub アクセス
+
+            .access__map
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6404682209936!2d139.70485546544995!3d35.66122873019906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5f48f5b559%3A0x297bb7b8ab045e2e!2z44CSMTUwLTAwMDIg5p2x5Lqs6YO95riL6LC35Yy65riL6LC377yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1598242765929!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            address.access__address
+              .address__head
+                p.address__title 東京本社
+                a.main_button.address__button.pc_show(href="#") Google map
+              .address__body
+                p.address__text 〒123-4567 
+                  br.sp_show
+                  | 東京都渋谷区渋谷1-1-1オーダービル1F
+                // 電話番号が必要な場合はここに入力 <p class="address__text">TEL: 0120-1234-5678</p>
+              a.main_button.address__button.sp_show(href="#") Google map
+
+        section.about__branch.bg_white
+          .container.wrapper
+            h2.about_title.branch__title 他支店一覧
+
+            .branch__inner
+              .branch__card
+                p.branch__name 大阪支店
+                .branch__map
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6404682209936!2d139.70485546544995!3d35.66122873019906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5f48f5b559%3A0x297bb7b8ab045e2e!2z44CSMTUwLTAwMDIg5p2x5Lqs6YO95riL6LC35Yy65riL6LC377yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1598242765929!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                address.branch__address
+                  p.address__text 〒123-4567 
+                    br.sp_show
+                    | 京都渋谷区渋谷1-1-1オーダービル1F
+                  // 電話番号がある場合はここに入力 <p class="address__text">0120-1234-5678</p>
+                a.main_button.branch__button(href="#") Google map
+
+              .branch__card
+                p.branch__name 大阪支店
+                .branch__map
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6404682209936!2d139.70485546544995!3d35.66122873019906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5f48f5b559%3A0x297bb7b8ab045e2e!2z44CSMTUwLTAwMDIg5p2x5Lqs6YO95riL6LC35Yy65riL6LC377yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1598242765929!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                address.branch__address
+                  p.address__text 〒123-4567
+                    br.sp_show
+                    | 東京都渋谷区渋谷1-1-1オーダービル1F
+                a.main_button.branch__button(href="#") Google map
+
+              .branch__card
+                p.branch__name 大阪支店
+                .branch__map
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6404682209936!2d139.70485546544995!3d35.66122873019906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5f48f5b559%3A0x297bb7b8ab045e2e!2z44CSMTUwLTAwMDIg5p2x5Lqs6YO95riL6LC35Yy65riL6LC377yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1598242765929!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                address.branch__address
+                  p.address__text 〒123-4567
+                    br.sp_show
+                    | 東京都渋谷区渋谷1-1-1オーダービル1F
+                a.main_button.branch__button(href="#") Google map
+
+              .branch__card
+                p.branch__name 大阪支店
+                .branch__map
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6404682209936!2d139.70485546544995!3d35.66122873019906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5f48f5b559%3A0x297bb7b8ab045e2e!2z44CSMTUwLTAwMDIg5p2x5Lqs6YO95riL6LC35Yy65riL6LC377yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1598242765929!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                address.branch__address
+                  p.address__text 〒123-4567
+                    br.sp_show
+                    | 東京都渋谷区渋谷1-1-1オーダービル1F
+                a.main_button.branch__button(href="#") Google map
+
+    include _element/_footer.pug
+    script(src="../js/parallax.js")

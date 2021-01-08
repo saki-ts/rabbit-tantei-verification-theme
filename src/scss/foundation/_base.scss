@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import "./_import";
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: $color-white;
+	color: $color-black;
+  font-family: $font-sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  font-size: 14px;
+	line-height: 2;
+	letter-spacing: 0.05em;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,ol,dl {
+	list-style-type: none;
+}
+
+/* --------------------
+smart phone
+default style reset
+-------------------- */
+input, button, select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance:none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid $color-secondary;
+  background: $color-white;
+  border-radius: 5px;
+  font-family: $font-sans-serif;
+  padding: 10px;
+  width: 100%;
+}
+
+input,select,textarea {
+  &:focus {
+    background: #fffbc9;
+  }
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/* select box , checkboxの矢印を非表示 */
+select::-ms-expand {
+  display: none;
+}
+
+
+/* placeholder color */
+@include placeholder {
+  color: $color-placeholder;
+  // opacity: 0.7;
+}
+
+/* --------------------
+font
+-------------------- */
+a,p {
+  line-height: 2;
+}
+p {
+  margin: 0;
+}
+
+/* --------------------
+link color
+-------------------- */
+a{
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover,&:focus {
+    outline: none;
+    text-decoration: underline;
+  }
+}
+
+/* --------------------
+hover effect
+-------------------- */
+a, a img, input {
+  -webkit-transition: opacity .4s, background-color .4s;
+  transition: opacity .4s, background-color .4s;
+  opacity: 1;
+}

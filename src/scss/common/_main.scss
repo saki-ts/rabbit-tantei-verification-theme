@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@import "../foundation/_import";
+
+
+/***************************************
+
+Layout
+
+***************************************/
+.allwrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  padding-right: 32px;
+  padding-left: 32px;
+
+  @include mq() {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.m {
+  @include mq() {
+    padding-top: 60px;
+  }
+}
+
+/***************************************
+
+Switch display
+
+***************************************/
+.sp_show {
+  display: none !important;
+}
+
+.pc_show {
+  display: block !important;
+}
+
+@include mq() {
+  .sp_show {
+    display: block !important;
+  }
+
+  .pc_show {
+    display: none !important;
+  }
+}
+
+/***************************************
+
+Background color
+
+***************************************/
+.bg_white {
+  background: $color-white;
+}
+
+.bg_gray {
+  background: $color-gray2;
+}
+
+.theme_color {
+  background: $color-secondary;
+}
+
+/***************************************
+
+Effects
+
+***************************************/
+.js-fadein {
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 0.6s linear, transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  &.is-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/***************************************
+
+Common tittles
+
+***************************************/
+.main {
+  &_title {
+    color: $color-primary;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    margin-bottom: 64px;
+    text-align: center;
+
+    @include mq() {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    &--white {
+      color: $color-white;
+    }
+
+    &--sub {
+      display: block;
+      font-weight:500;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      margin-top: 1em;
+
+      @include mq() {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.branch_main_title {
+  color: $color-primary;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 64px;
+  line-height: 1;
+  text-align: center;
+
+  @include mq() {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  &--sub {
+    display: block;
+    font-weight:500;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin-top: 1em;
+
+    @include mq() {
+      font-size: 12px;
+    }
+  }
+}
+
+/***************************************
+
+Buttons
+
+***************************************/
+.main {
+  &_button {
+    background: $color-secondary;
+    border-radius: 5px;
+    border: 2px solid $color-secondary;
+    color: $color-white;
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    margin: 0 auto;
+    padding: 16px;
+    text-align: center;
+    width: 240px;
+
+    &:hover,&:focus {
+      background: $color-white;
+      color: $color-secondary;
+      transition: $transition-event1;
+      text-decoration: none;
+    }
+
+    @include mq() {
+      padding: 12px 16px;
+    }
+  }
+}

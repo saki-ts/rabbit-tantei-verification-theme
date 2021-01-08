@@ -1,0 +1,43 @@
+// /***************************************
+// media query
+// ***************************************/
+$breakpoints: (
+  'max-375': 'screen and (max-width: 375px)',
+  'max-480': 'screen and (max-width: 480px)',
+  'min-481': 'screen and (min-width: 481px)',
+  'max-768': 'screen and (max-width: 768px)',
+  'max-960': 'screen and (max-width: 960px)',
+  'min-961': 'screen and (min-width: 961px)',
+  'max-1024': 'screen and (max-width: 1024px)',
+  'min-1024': 'screen and (min-width: 1024px)',
+  'max-1440': 'screen and (max-width: 1440px)',
+) !default;
+// 引数mqで呼び出す
+@mixin mq($breakpoint: max-960) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// /***************************************
+// placeholder
+// ***************************************/
+@mixin placeholder {
+  :placeholder-shown {
+      @content;
+  }
+  /* Google Chrome, Safari, Opera 15+, Android, iOS */
+  ::-webkit-input-placeholder {
+      @content;
+  }
+  /* Firefox 18- */
+  :-moz-placeholder {
+      opacity: 1;
+      @content;
+  }
+  /* Firefox 19+ */
+  ::-moz-placeholder {
+      opacity: 1;
+      @content;
+  }
+}

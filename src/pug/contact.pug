@@ -1,0 +1,55 @@
+- var isContact = true;
+doctype html
+html(lang="ja")
+  include _element/_head.pug
+
+  body.contact
+    .allwrapper
+      include _element/_header.pug
+
+      main.m
+        section.section
+          header.section__header
+            h1.section__ttl Contact
+              span.section__ttl-ja お問い合わせ
+            p.section__txt このページからお問合せを受け付けております。
+              br
+              | 下記必須項目は必ず入力の上、お問合せ下さい。
+          .section__body
+            form.form(action="contact_confirm.html")
+              .form__list
+                //- dl.form__item
+                //-   dt.form__label.requied お問い合わせ内容の種類
+                //-   dd.form__desc
+                //-     .select-wrap
+                //-       select(name='type', id='')
+                //-         option(value='') 選択してください
+                dl.form__item
+                  dt.form__label 貴社名
+                  dd.form__desc
+                    input(type='text', name='company_name', placeholder='株式会社DEMO Inc.')
+                dl.form__item
+                  dt.form__label.requied お名前
+                  dd.form__desc
+                    input(type='text', name='name', placeholder='山田太郎')
+                dl.form__item
+                  dt.form__label.requied 電話番号（半角英数記号）
+                  dd.form__desc
+                    input(type='text', name='tel', placeholder='090-1234-5678')
+                dl.form__item
+                  dt.form__label.requied メールアドレス（半角英数記号）
+                  dd.form__desc
+                    input(type='text', name='mail', placeholder='temple@gmail.com')
+                dl.form__item
+                  dt.form__label.requied お問い合わせ内容
+                  dd.form__desc
+                    textarea(name='content', id='', cols='30', rows='8', placeholder='お問い合わせ内容を入力してください。')
+              .form__footer
+                p
+                  a(href='privacy.html') プライバシーポリシー
+                  | をご確認の上、下記ボタンより先にお進みください。
+              .form__btn
+                span.form__btn-wrapper
+                  button.btn 確認画面へ
+
+    include _element/_footer.pug

@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import "../foundation/_import";
+
+/***************************************
+
+header
+
+***************************************/
+.h {
+  background: $color-white;
+  border-bottom: 1px solid $color-gray4;
+  box-shadow: 0 0px 0px $color-header-shadow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: $transition-event1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  width: 100%;
+  z-index: 2;
+
+  &.is-sticky {
+    box-shadow: 0 1px 20px $color-header-shadow;
+    border-color: transparent;
+  }
+
+  &_container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    padding: 8px 56px;
+    margin: 0 auto;
+    max-width: 1552px;
+    width: 100%;
+
+    @include mq() {
+      max-width: 100%;
+      min-height: 60px;
+      padding: 8px 20px;
+      position: relative;
+    }
+  }
+
+  //* logo -------------------------
+  &_logo {
+    @include mq() {
+      max-width: 50%;
+    }
+
+    &__link {
+      color: $color-secondary;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0.1em;
+      &:hover,:focus {
+        text-decoration: none;
+      }
+    }
+
+    &__img {
+      max-height: 64px;
+      @include mq() {
+        max-height: inherit;
+      }
+    }
+  }
+
+  //* navigation --------------------
+  &_nav {
+    @include mq() {
+      display: none;
+      box-sizing: border-box;
+      background: $color-secondary;
+      color: $color-white;
+      padding: 40px 20px;
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      overflow: hidden;
+      visibility: hidden;
+      height: 100vh;
+      width: 100%;
+      transition: $transition-event2;
+    }
+
+    &__hamburger {
+      display: none;
+
+      @include mq() {
+        border: 0;
+        outline: 0;
+        background: transparent;
+        cursor: pointer;
+        box-sizing: content-box;
+        padding: 0;
+        padding: 18px .85rem;
+        -webkit-transition: $transition-event1;
+        transition: $transition-event1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        width: 3rem;
+        z-index: 3;
+
+        &_icon{
+          position: relative;
+          display: block;
+          margin-top: 10px;
+      
+          &:before,
+          &:after{
+            background: $color-secondary;
+            -webkit-transition: $transition-event1;
+            transition: $transition-event1;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            content: " ";
+            height: 2px;
+            width: 100%;
+          }
+
+          &:after{
+            top: 0;
+          }
+        }
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+
+      @include mq() {
+        display: block;
+        height: 91.5%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+          display:none;
+        }
+      }
+    }
+
+    &__item {
+      margin-right: 48px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include mq() {
+        border-bottom: 1px solid $color-white-op05;
+        margin-right: 0;
+      }
+    }
+
+    a {
+      display: block;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      position: relative;
+
+      &:after {
+        background: $color-secondary;
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        left: auto;
+        bottom: -0.2em;
+        transition: 0.2s $transition-event2;
+        width: 0;
+      }
+
+      &:hover,&:focus {
+        text-decoration: none;
+        &:after {
+          right: auto;
+          left: 0;
+          width: 100%;
+        }
+      }
+
+      @include mq() {
+        color: $color-white;
+        font-size: 16px;
+        padding: 24px 0;
+        text-align: center;
+      }
+    }
+    // ******************
+    // メニューサブテキスト
+    // ******************
+    &__sub_text {
+      display: block;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: 0.2rem;
+      margin-top: -0.5em;
+      text-align: center;
+    }
+  }
+}
+
+/***************************************
+
+SP menu opened
+
+***************************************/
+.js-nav-open{
+  &.h_nav{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: cubic-bezier(.19,1,.22,1);
+  }
+
+  .h_nav__hamburger {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 0;
+  }
+}
+
+.js-nav-trigger {
+  .h_nav__hamburger_icon{
+    background: transparent;
+
+    &:before{
+      transform: rotateZ(45deg);
+      top: -5px;
+    }
+
+    &:after{
+      transform: rotateZ(-45deg);
+      top: -5px;
+    }
+
+  }
+}

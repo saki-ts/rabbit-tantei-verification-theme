@@ -1,0 +1,281 @@
+/***************************************
+
+Contact
+
+***************************************/
+
+.contact {
+  .m {
+    padding: 180px 0 140px;
+    @include mq {
+      padding: 164px 0 72px;
+    }
+  }
+  .section {
+    max-width: 680px;
+    margin: 0 auto;
+    @include mq {
+      padding: 0 20px;
+    }
+
+    &__header {
+      text-align: center;
+      padding-bottom: 72px;
+      @include mq {
+        padding-bottom: 40px;
+      }
+
+      &-msg{
+        text-align: center;
+        padding-bottom: 50px;
+        h2 {
+          color: $color-black;
+          font-size: 22px;
+          font-weight: 600;
+          @include mq {
+            font-size: 18px;
+          }
+        }
+        + .s__header-text {
+          padding: 40px 0 0;
+          @include mq {
+            padding: 32px 0 0;
+          }
+        }
+      }
+
+      &-icon {
+        display: block;
+        width: 36px;
+        height: 36px;
+        margin: 0 auto 20px;
+
+        svg{
+          display: block;
+          margin: 0 auto;
+          path {
+            fill: $color-secondary;
+          }
+        }
+      }
+    }
+
+    &__ttl {
+      padding-bottom: 40px;
+      font-size: 46px;
+      line-height: 1.6;
+      letter-spacing: 0.1em;
+      @include mq {
+        font-size: 32px;
+      }
+      &-ja {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        @include mq {
+          font-size: 12px;
+        }
+      }
+      &--complete {
+        padding-bottom: 144px;
+        @include mq {
+          padding-bottom: 72px;
+        }
+      }
+    }
+
+    &__txt {
+      color: $color-black;
+    }
+  }
+
+  .form {
+    &__list {
+      padding-bottom: 60px;
+      @include mq {
+        padding-bottom: 40px;
+      }
+      &--confirm {
+        .form__item {
+          padding-bottom: 30px;
+          @include mq {
+            padding-bottom: 24px;
+          }
+        }
+      }
+    }
+    &__item {
+      padding-bottom: 28px;
+      @include mq {
+        padding-bottom: 24px;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    &__label {
+      padding-bottom: 10px;
+      font-weight: 600;
+      &.requied {
+        &:before {
+          content: '※';
+          color: #FF3F34;
+        }
+      }
+    }
+
+    &__desc {
+      p {
+        border-bottom: 1px solid #d0d8d9;
+        padding-bottom: 30px;
+        @include mq {
+          padding-bottom: 24px;
+        }
+      }
+    }
+
+    &__footer {
+      text-align: center;
+      padding-bottom: 60px;
+      font-size: 14px;
+      @include mq {
+        text-align: left;
+        padding: 0 20px 40px;
+      }
+      a {
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__btn {
+      text-align: center;
+      padding: 0;
+      &-wrapper {
+        position: relative;
+        max-width: 550/630 * 100%;
+        width: 420px;
+        display: block;
+        margin: 0 auto;
+      }
+      .btn {
+        background: $color-secondary;
+        border-radius: 5px;
+        display: inline-block;
+        transition: all .4s;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        width: 100%;
+        max-width: 420px;
+        height: 72px;
+        letter-spacing: 0.05em;
+        &--link {
+          line-height: 72px;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__back-input {
+      border: none;
+      padding: 0;
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      &:focus {
+        outline: none;
+        background: none;
+      }
+    }
+
+    &__back-btn{
+      display: flex;
+      align-items: center;
+      width: 168px;
+      color: $color-black;
+      font-weight: 500;
+      font-size: 15px;
+      margin: 0 auto;
+      position: relative;
+      padding-top: 50px;
+      height: 30px;
+      @include mq {
+        font-size: 14px;
+      }
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-left: 2px solid $color-secondary;
+        border-top: 2px solid $color-secondary;
+        transform: rotate(-45deg);
+        margin-right: 15px;
+        z-index: 1;
+      }
+
+      .form__back-input {
+        text-indent: 1em;
+      }
+    }
+
+    input[type="tel"],
+    input[type="email"],
+    input[type="text"] {
+      border: none;
+      background: #eff0f2;
+      padding: 10px 30px;
+      @include mq {
+        padding: 10px 20px;
+      }
+      &:focus {
+        background: #fff;
+      }
+      &::placeholder {
+        color: #dbdbdb;
+      }
+    }
+    select,
+    textarea {
+      border: none;
+      background: #eff0f2;
+      padding: 10px 30px;
+      @include mq {
+        padding: 10px 20px;
+      }
+      &:focus {
+        background: #fff;
+      }
+      &::placeholder {
+        color: #dbdbdb;
+      }
+    }
+  }
+
+  div.wpcf7 .ajax-loader {
+    position: absolute;
+    top: -2em;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .js-confirm {
+    display: none;
+  }
+
+  .js-contact-complete {
+    display: none;
+  }
+
+  .wpcf7c-conf {
+    display: none;
+  }
+}
