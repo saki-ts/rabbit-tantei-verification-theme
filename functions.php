@@ -90,6 +90,106 @@ function head_Cleaneup() {
   wp_deregister_script('comment-reply');
 }
 
+
+// ************************************************
+//  投稿アーカイプの有効/スラッグ指定
+// ************************************************
+// 昨日のNotionで書いた部分
+// add_action( 'register_post_type_args', 'post_has_archive', 10, 2 );
+
+// function post_has_archive($args, $post_type) {
+//   if( 'post' == $post_type ) {
+//     $args['rewrite'] = true;
+//     $args['has_archive'] = 'topic'; // スラッグ名
+//   }
+//   return $args;
+// }
+// 昨日のNotionで書いた部分/end
+
+function custom_post_example() { 
+	// creating (registering) the custom type 
+	register_post_type( 'custom_type', /* ここにarchive-〇〇.phpになる〇〇を入れる。 (http://codex.wordpress.org/Function_Reference/register_post_type) */
+
+		// 以下の「custom_type」はarchive-〇〇.phpの「〇〇」に置き換える。
+		// let's now add all the options for this post type
+		array( 'labels' => array(
+			'name' => __( 'Custom Types', 'bonestheme' ), /* 【最低限必須】このnameは管理画面のメニュー名が変更する。日本語可能。This is the Title of the Group */
+			'singular_name' => __( 'Custom Post', 'bonestheme' ), /* 【最低限必須】これは個別のタイプです。日本語可能。 This is the individual type */
+			'all_items' => __( 'All Custom Posts', 'bonestheme' ), /* the all items menu item */
+			'add_new' => __( 'Add New', 'bonestheme' ), /* The add new menu item */
+			'add_new_item' => __( 'Add New Custom Type', 'bonestheme' ), /* Add New Display Title */
+			'edit' => __( 'Edit', 'bonestheme' ), /* Edit Dialog */
+			'edit_item' => __( 'Edit Post Types', 'bonestheme' ), /* Edit Display Title */
+			'new_item' => __( 'New Post Type', 'bonestheme' ), /* New Display Title */
+			'view_item' => __( 'View Post Type', 'bonestheme' ), /* View Display Title */
+			'search_items' => __( 'Search Post Type', 'bonestheme' ), /* Search Custom Type Title */ 
+			'not_found' =>  __( 'Nothing found in the Database.', 'bonestheme' ), /* This displays if there are no entries yet */ 
+			'not_found_in_trash' => __( 'Nothing found in Trash', 'bonestheme' ), /* This displays if there is nothing in the trash */
+			'parent_item_colon' => ''
+			), /* end of arrays */
+			'description' => __( 'This is the example custom post type', 'bonestheme' ), /* Custom Type Description */
+			'public' => true,/* 【最低限必須】? */
+			'publicly_queryable' => true,
+			'exclude_from_search' => false,
+			'show_ui' => true,
+			'query_var' => true,
+			'menu_position' => 8, /* 【最低限必須】 this is what order you want it to appear in on the left hand side menu */ 
+			'menu_icon' => get_stylesheet_directory_uri() . '/library/images/custom-post-icon.png', /* the icon for the custom post type menu */
+			'rewrite'	=> array( 'slug' => 'custom_type', 'with_front' => false ), /* 【最低限必須】 you can specify its url slug */
+			'has_archive' => 'custom_type', /* 【最低限必須】 you can rename the slug here */
+			'capability_type' => 'post',
+			'hierarchical' => false,
+			/* 【最低限必須】 the next one is important, it tells what's enabled in the post editor */
+			'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'sticky')
+		) /* end of options */
+	); /* end of register post type */
+	
+	/* this adds your post categories to your custom post type */
+	register_taxonomy_for_object_type( 'category', 'custom_type' );
+	/* this adds your post tags to your custom post type */
+	register_taxonomy_for_object_type( 'post_tag', 'custom_type' );
+	
+}
+
+	// adding the function to the Wordpress init
+	add_action( 'init', 'custom_post_example');
+
+/*------------------------------------
+PHP Program Information
+Summary カスタム投稿を追加
+ ------------------------------------*/
+/* カスタム投稿タイプ - ニュース as topic */
+add_action( 'init', 'create_post_type_topic' );
+function create_post_type_topic() {
+	register_post_type( 'topic',
+		array(
+			'labels' => array(
+				'name' => __( 'ニュース' ),
+				'singular_name' => __( 'news' ),
+				'hierarchical' => true
+			),
+			'rewrite' => array('slug' => 'topic', 'with_front' => false),
+			'public' => true,
+			'menu_position' => 100,
+			'has_archive' => true,
+			'supports' => array('title','editor','thumbnail','excerpt'),
+			'map_meta_cap'=> true // 不要?
+		)
+	);
+	//  register_taxonomy(
+	// 	'topics',
+	// 	'topic',
+	// 	array(
+	// 		'hierarchical' => true,
+	// 		'update_count_callback' => '_update_post_term_count',
+	// 		'label' => 'ニュースカテゴリー',
+	// 		'singular_label' => 'ニュースカテゴリー',
+	// 		'public' => true,
+	// 		'show_ui' => true
+	// 	)
+	// );
+}
+
 // ************************************************
 //  ADMIN - LEFT SIDE MENU
 // ************************************************

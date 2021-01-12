@@ -104,6 +104,8 @@
 				wp_reset_postdata();
 			?>
 		</ul>
+
+		<a class="main_button" href="<?php bloginfo('url');?>/topic">View More</a>
 	</div>
 </section>
 <section class="contact theme_color">
