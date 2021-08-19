@@ -138,19 +138,7 @@ function sassFunc(cb) {
   cb();
 }
 
-// image圧縮（仕様運転中）
-function tinypngFuc(cb) {
-  src(paths.imgSrc)
-  .pipe(
-    tinyping({
-      key: "M7vQ0zkJMgXb3260ZrGp37QgLmWJpQZ3" // TinyPNGのAPI Key
-    })
-  )
-  .pipe(dest(paths.outImg));
-  cb();
-}
-
-// image圧縮（一旦使用停止中）
+// image圧縮
 function imgminFunc(cb) {
   src(paths.imgSrc)
   .pipe(changed(paths.outImg))
@@ -222,11 +210,11 @@ function watchFunc(cb) {
   watch(paths.htmlSrc).on('change', gulp.series(reload));
   watch(paths.pugSrc).on('change', gulp.series(pugFunc,reload));
   watch(paths.scssSrc).on('change', gulp.series(sassFunc,reload));
-  watch(paths.imgSrc).on('change', gulp.series(tinypngFuc, reload));
+  watch(paths.imgSrc).on('change', gulp.series(imgminFuc, reload));
   watch(paths.jsSrc).on('change', gulp.series(reload));
   cb();
 }
 
 exports.j = webpackFunc;
 exports.c = cssminFunc;
-exports.default = series(sassFunc, pugFunc, tinypngFuc, imgminFunc, watchFunc, reloadFunc);
+exports.default = series(sassFunc, pugFunc, imgminFunc, watchFunc, reloadFunc);
