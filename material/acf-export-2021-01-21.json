@@ -1,0 +1,1135 @@
+[
+    {
+        "key": "group_60029ea2619d8",
+        "title": "カテゴリカラー",
+        "fields": [
+            {
+                "key": "field_557d5ea90640a",
+                "label": "カラー",
+                "name": "color",
+                "type": "color_picker",
+                "instructions": "カテゴリの色を選択してください",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#ff0000"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "matomes"
+                }
+            ],
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "columns"
+                }
+            ],
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "cases"
+                }
+            ],
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "topics"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "format",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_60029ea27a8be",
+        "title": "まとめ記事",
+        "fields": [
+            {
+                "key": "field_557d5790dca85",
+                "label": "引用元サイト名",
+                "name": "sitename",
+                "type": "text",
+                "instructions": "引用元のサイト名を正確に記入してください",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "ヤフージャパン",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_557d57bddca86",
+                "label": "引用元URL",
+                "name": "url",
+                "type": "text",
+                "instructions": "引用元のURLを正確に記入してください",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "http:\/\/yahoo.co.jp",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55828dbeb381a",
+                "label": "ラビット探偵社の見解",
+                "name": "kenkai",
+                "type": "textarea",
+                "instructions": "SEO対策としてラビット探偵ならどんなアドバイスができるのか？<br>\r\n第三者視点から見解を記入してください。",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "ラビット探偵社の見解は…",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "br"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "matome"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "format",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_60029ea2915b5",
+        "title": "事例別料金表",
+        "fields": [
+            {
+                "key": "field_55c34c74738e4",
+                "label": "調査カテゴリ",
+                "name": "調査カテゴリ",
+                "type": "radio",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "浮気・素行調査": "浮気・素行調査",
+                    "人捜し・家出人調査": "人捜し・家出人調査",
+                    "盗聴器発見": "盗聴器発見",
+                    "ストーカー対策": "ストーカー対策",
+                    "結婚前信用調査": "結婚前信用調査",
+                    "行方調査": "行方調査",
+                    "いたずら・嫌がらせ調査": "いたずら・嫌がらせ調査",
+                    "お子様の見守り調査": "お子様の見守り調査",
+                    "その他の調査": "その他の調査"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "allow_null": 0,
+                "return_format": "value"
+            },
+            {
+                "key": "field_55c34c9c738e5",
+                "label": "調査内容",
+                "name": "調査内容",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55c34cd3738e6",
+                "label": "都道府県",
+                "name": "都道府県",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "埼玉県": "埼玉県",
+                    "千葉県": "千葉県",
+                    "東京都": "東京都",
+                    "神奈川県": "神奈川県",
+                    "大阪府": "大阪府"
+                },
+                "default_value": false,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value"
+            },
+            {
+                "key": "field_55c34d03738e7",
+                "label": "調査期間",
+                "name": "調査期間",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "1か月",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55c34fc99cfa9",
+                "label": "調査日数",
+                "name": "調査日数",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": 6,
+                "prepend": "",
+                "append": "日",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55c34d4f738e8",
+                "label": "調査時間",
+                "name": "調査時間",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": 22,
+                "prepend": "",
+                "append": "時間",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_55c34d69738e9",
+                "label": "調査員数",
+                "name": "調査員数",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": 3,
+                "prepend": "",
+                "append": "名",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_55c34d91738ea",
+                "label": "費用",
+                "name": "費用",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": 550000,
+                "prepend": "合計",
+                "append": "円",
+                "min": "",
+                "max": "",
+                "step": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "price"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_60029ea2a8ba9",
+        "title": "支店一覧",
+        "fields": [
+            {
+                "key": "field_6002a0bdcc3e7",
+                "label": "名称",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5dd64e7635e7b",
+                "label": "本社・支社",
+                "name": "cf_branch_flag",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "head": "本社",
+                    "branch": "支社"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "allow_null": 0,
+                "return_format": "value"
+            },
+            {
+                "key": "field_5dd625ba771f7",
+                "label": "支店名（英語）",
+                "name": "cf_branch_name_eng",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "tokyo",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5dd625da771f8",
+                "label": "支店名（日本語）",
+                "name": "cf_branch_name_jpn",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "東京",
+                "prepend": "",
+                "append": "支店",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6002a10ecc3eb",
+                "label": "住所･最寄り駅",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5dd6261c112fe",
+                "label": "都道府県名",
+                "name": "cf_branch_pref",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "東京都",
+                "prepend": "",
+                "append": "公安委員会",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5dd62647112ff",
+                "label": "住所 1",
+                "name": "cf_branch_address_1",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "東京都港区芝1-15-14",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5dd62b53fd668",
+                "label": "住所 2",
+                "name": "cf_branch_address_2",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "オフィスニューガイア浜松町No.16 3階",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60029eefbdf8d",
+                "label": "最寄り駅",
+                "name": "cf_branch_access_group",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "交通手段を追加する",
+                "sub_fields": [
+                    {
+                        "key": "field_60029f21bdf8e",
+                        "label": "駅名",
+                        "name": "cf_branch_access_station",
+                        "type": "text",
+                        "instructions": "<span style=\"font-size: 10px;\">最寄りの駅名を入力してください。<\/span>",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "東京駅",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_60029f60bdf8f",
+                        "label": "出口および徒歩分数",
+                        "name": "cf_branch_access_minute",
+                        "type": "text",
+                        "instructions": "<span style=\"font-size: 10px;\">出口名や徒歩などの詳細を入力してください。<\/span>",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "〇〇から徒歩〇分",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_60029facbdf90",
+                        "label": "沿線名",
+                        "name": "cf_branch_access_line",
+                        "type": "text",
+                        "instructions": "<span style=\"font-size: 10px;\">沿線名を入力してください。<\/span>",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "JR山手線",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_6002a0eecc3e8",
+                "label": "Google Maps",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5dd62ab49d26e",
+                "label": "緯度",
+                "name": "cf_branch_latitude",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "35.649781",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5dd62ac99d26f",
+                "label": "経度",
+                "name": "cf_branch_longitude",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "139.753626",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5dd6272a11303",
+                "label": "iframe",
+                "name": "cf_branch_url",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!〜〜〜〜",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6002a10acc3ea",
+                "label": "探偵届出",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5dd6269f11301",
+                "label": "探偵届出番号",
+                "name": "cf_branch_number",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": 30190034,
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5dd627fcbe389",
+                "label": "届出書",
+                "name": "cf_branch_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "branch"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "author",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_60029ea2cfcbb",
+        "title": "過去の実績",
+        "fields": [
+            {
+                "key": "field_5582ff180280a",
+                "label": "顧客情報",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5582fcb81c65d",
+                "label": "名前",
+                "name": "name",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "山田",
+                "prepend": "",
+                "append": "さん（仮名）",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5582fcd71c65e",
+                "label": "都道府県",
+                "name": "pref",
+                "type": "select",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "北海道": "北海道",
+                    "青森県": "青森県",
+                    "岩手県": "岩手県",
+                    "宮城県": "宮城県",
+                    "秋田県": "秋田県",
+                    "山形県": "山形県",
+                    "福島県": "福島県",
+                    "茨城県": "茨城県",
+                    "栃木県": "栃木県",
+                    "群馬県": "群馬県",
+                    "埼玉県": "埼玉県",
+                    "千葉県": "千葉県",
+                    "東京都": "東京都",
+                    "神奈川県": "神奈川県",
+                    "新潟県": "新潟県",
+                    "富山県": "富山県",
+                    "石川県": "石川県",
+                    "福井県": "福井県",
+                    "山梨県": "山梨県",
+                    "長野県": "長野県",
+                    "岐阜県": "岐阜県",
+                    "静岡県": "静岡県",
+                    "愛知県": "愛知県",
+                    "三重県": "三重県",
+                    "滋賀県": "滋賀県",
+                    "京都府": "京都府",
+                    "大阪府": "大阪府",
+                    "兵庫県": "兵庫県",
+                    "奈良県": "奈良県",
+                    "和歌山県": "和歌山県",
+                    "鳥取県": "鳥取県",
+                    "島根県": "島根県",
+                    "岡山県": "岡山県",
+                    "広島県": "広島県",
+                    "山口県": "山口県",
+                    "徳島県": "徳島県",
+                    "香川県": "香川県",
+                    "愛媛県": "愛媛県",
+                    "高知県": "高知県",
+                    "福岡県": "福岡県",
+                    "佐賀県": "佐賀県",
+                    "長崎県": "長崎県",
+                    "熊本県": "熊本県",
+                    "大分県": "大分県",
+                    "宮崎県": "宮崎県",
+                    "鹿児島県": "鹿児島県",
+                    "沖縄県": "沖縄県"
+                },
+                "default_value": "選択して下さい",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value"
+            },
+            {
+                "key": "field_5582fd761c65f",
+                "label": "年齢",
+                "name": "age",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": 30,
+                "prepend": "",
+                "append": "歳",
+                "min": 0,
+                "max": 100,
+                "step": ""
+            },
+            {
+                "key": "field_5582ff2a0280b",
+                "label": "調査内容",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5582fe092a96a",
+                "label": "依頼カテゴリ",
+                "name": "category",
+                "type": "radio",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "浮気・素行調査": "浮気・素行調査",
+                    "人捜し・家出人調査": "人捜し・家出人調査",
+                    "盗聴器発見": "盗聴器発見",
+                    "ストーカー対策": "ストーカー対策",
+                    "結婚前信用調査": "結婚前信用調査",
+                    "いたずら・嫌がらせ調査": "いたずら・嫌がらせ調査",
+                    "お子様の見守り調査": "お子様の見守り調査",
+                    "その他の調査": "その他の調査"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "allow_null": 0,
+                "return_format": "value"
+            },
+            {
+                "key": "field_5582fda81c660",
+                "label": "簡単な状況",
+                "name": "status",
+                "type": "text",
+                "instructions": "相談者の依頼の簡易分を入力してください。",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "最近妻の様子がおかしい。妻の携帯のメールを見たら浮気しているような内容があったので真実が知りたい",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_558300faa0826",
+                "label": "依頼内容",
+                "name": "commission",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "妻の帰りが遅い日を誰と会ってるか確認したい。",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5582fe662a96b",
+                "label": "調査費用",
+                "name": "price",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "400,000",
+                "prepend": "",
+                "append": "円",
+                "min": "",
+                "max": "",
+                "step": 1000
+            },
+            {
+                "key": "field_5582fea02a96c",
+                "label": "調査内容（調査項目・実際に行った作業など）",
+                "name": "tag",
+                "type": "textarea",
+                "instructions": "実際に行った調査項目をコンマ区切りで入力してください。",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5582ff540280c",
+                "label": "コメント",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5582feb92a96d",
+                "label": "ラビット探偵からの一言",
+                "name": "comment",
+                "type": "textarea",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_558403f30d062",
+                "label": "評価数",
+                "name": "star",
+                "type": "number",
+                "instructions": "☆の数を指定してください。",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": 5,
+                "prepend": "",
+                "append": "",
+                "min": 1,
+                "max": 5,
+                "step": 1
+            },
+            {
+                "key": "field_57258418fbd72",
+                "label": "アンケート画像",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_57258422fbd73",
+                "label": "アンケート画像",
+                "name": "questionnaire",
+                "type": "image",
+                "instructions": "アンケート画像をスキャンしたものを画像登録してください",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "thumbnail",
+                "library": "all",
+                "return_format": "array",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "case"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    }
+]

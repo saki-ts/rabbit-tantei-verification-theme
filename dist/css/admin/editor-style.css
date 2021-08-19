@@ -1,0 +1,211 @@
+/******************************************************************
+
+Admin:TinyMCE Editor
+
+******************************************************************/
+
+body#tinymce.wp-editor {
+  -webkit-font-smoothing: antialiased;
+  color: #5c6b80;
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  padding: 1.5em 1.5em 0;
+  width: 731px;
+  /*********************
+	LINK STYLES
+	*********************/
+  /******************************************************************
+	H1, H2, H3, H4, H5 STYLES
+	******************************************************************/
+}
+
+body#tinymce.wp-editor a,
+body#tinymce.wp-editor a:visited {
+  color: #3A3A3A;
+  /* on hover */
+  /* on click */
+}
+
+body#tinymce.wp-editor a:hover,
+body#tinymce.wp-editor a:focus,
+body#tinymce.wp-editor a:visited:hover,
+body#tinymce.wp-editor a:visited:focus {
+  text-decoration: underline;
+}
+
+body#tinymce.wp-editor a:link,
+body#tinymce.wp-editor a:visited:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+body#tinymce.wp-editor h1,
+body#tinymce.wp-editor .h1,
+body#tinymce.wp-editor h2,
+body#tinymce.wp-editor .h2,
+body#tinymce.wp-editor h3,
+body#tinymce.wp-editor .h3,
+body#tinymce.wp-editor h4,
+body#tinymce.wp-editor .h4,
+body#tinymce.wp-editor h5,
+body#tinymce.wp-editor .h5 {
+  font-weight: 500;
+  text-rendering: optimizelegibility;
+}
+
+body#tinymce.wp-editor h1 a,
+body#tinymce.wp-editor .h1 a,
+body#tinymce.wp-editor h2 a,
+body#tinymce.wp-editor .h2 a,
+body#tinymce.wp-editor h3 a,
+body#tinymce.wp-editor .h3 a,
+body#tinymce.wp-editor h4 a,
+body#tinymce.wp-editor .h4 a,
+body#tinymce.wp-editor h5 a,
+body#tinymce.wp-editor .h5 a {
+  text-decoration: none;
+}
+
+body#tinymce.wp-editor h1,
+body#tinymce.wp-editor .h1 {
+  font-size: 2.5em;
+  line-height: 1.333em;
+}
+
+body#tinymce.wp-editor h2,
+body#tinymce.wp-editor .h2 {
+  font-size: 1.75em;
+  line-height: 1.4em;
+  margin-bottom: 0.375em;
+}
+
+body#tinymce.wp-editor h3,
+body#tinymce.wp-editor .h3 {
+  font-size: 1.125em;
+}
+
+body#tinymce.wp-editor h4,
+body#tinymce.wp-editor .h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+body#tinymce.wp-editor h5,
+body#tinymce.wp-editor .h5 {
+  font-size: 0.846em;
+  letter-spacing: 2px;
+  line-height: 2.09em;
+  text-transform: uppercase;
+}
+
+body#tinymce.wp-editor p {
+  margin: 0 0 1.5em;
+}
+
+body#tinymce.wp-editor table {
+  border: 1px solid #9A9A9A;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+body#tinymce.wp-editor table caption {
+  color: #484848;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  margin: 0 0 7px;
+  text-transform: uppercase;
+}
+
+body#tinymce.wp-editor tr {
+  border-bottom: 1px solid #9A9A9A;
+}
+
+body#tinymce.wp-editor tr:nth-child(even) {
+  background-color: #F7F7F7;
+}
+
+body#tinymce.wp-editor td {
+  border-right: 1px solid #9A9A9A;
+  padding: 7px;
+}
+
+body#tinymce.wp-editor td:last-child {
+  border-right: 0;
+}
+
+body#tinymce.wp-editor th {
+  background-color: #F7F7F7;
+  border-bottom: 1px solid #9A9A9A;
+  border-right: 1px solid #9A9A9A;
+}
+
+body#tinymce.wp-editor th:last-child {
+  border-right: 0;
+}
+
+body#tinymce.wp-editor blockquote {
+  border-left: 3px solid #484848;
+  color: #F7F7F7;
+  font-style: italic;
+  margin: 0 0 1.5em 0.75em;
+  padding: 0 0 0 0.75em;
+}
+
+body#tinymce.wp-editor dd {
+  color: #787878;
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+}
+
+body#tinymce.wp-editor img {
+  height: auto;
+  margin: 0 0 1.5em 0;
+  max-width: 100%;
+}
+
+body#tinymce.wp-editor .size-auto,
+body#tinymce.wp-editor .size-full,
+body#tinymce.wp-editor .size-large,
+body#tinymce.wp-editor .size-medium,
+body#tinymce.wp-editor .size-thumbnail {
+  height: auto;
+  max-width: 100%;
+}
+
+body#tinymce.wp-editor pre {
+  background: #222;
+  border-radius: 3px;
+  color: #F7F7F7;
+  font-size: 0.9em;
+  margin: 0 0 1.5em;
+  padding: 1.5em;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+/* entry content */
+
+.entry-content .alignleft,
+.entry-content img.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.entry-content .alignright,
+.entry-content img.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.entry-content .aligncenter,
+.entry-content img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,1106 @@
+@charset "utf-8";
+/* CSS Document */
+img{
+max-width: 100%;
+height: auto;
+width /***/:auto;　
+}
+.pc{
+    display: none;
+  }
+p.bun{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.banner{
+	position: relative;
+}
+
+.banner .banner_iwaikin{
+	width: 140px;
+	height: auto;
+	right:0;
+	top:-60px;
+	position: absolute;
+}
+
+section.recruit{
+	padding-bottom:50px;
+}
+
+section.content{
+	padding-bottom:30px;
+}
+p.jobimg{
+	text-align:center;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-90px;
+}
+div.back{
+	color:#636060;
+	padding:10px;
+	background:#eeeeee;
+    margin:10px 0;
+}
+div.investigator{
+	margin-top:80px;
+	border:8px solid #bfbfbf;
+	padding:10px;
+}
+
+div.mendanin div.investigator{
+	margin-top:100px;
+	margin-bottom:10px;
+
+}
+section#jobcontent p{
+	margin-bottom:10px;
+}
+section#jobcontent div.investigator h4{
+	padding:10px;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	color:#ffffff;
+	background:#233240;
+}
+section#jobcontent div.investigator p.answer{
+	color:#233240;
+	font-weight:bold;
+	font-size:14px;
+	padding:10px;
+	text-align:center;
+	border:3px solid #233240;
+	margin-bottom:20px;
+	margin-top:0;
+}
+
+section.recruit p.bunner{
+	margin-bottom:20px;
+}
+section.recruit h3{
+	padding:10px;
+	text-align:center;
+	font-size:16px;
+	color:#ffffff;
+	background:#233240;
+}
+
+section.recruit h3.kakuningamen{
+	background:#d02044;
+}
+
+.sankaku{
+	width:0 ;
+	height: 0;
+	text-align:center;
+	margin:0 auto;
+	border: 10px solid transparent;
+	border-top: 10px solid #233240;
+}
+
+.sankaku2{
+	width:0 ;
+	height: 0;
+	text-align:center;
+	margin:0 auto;
+	border: 10px solid transparent;
+	border-top: 10px solid #d02044;
+}
+
+
+section.recruit div.merit{
+	margin-top:10px;
+	margin-bottom:20px;
+	display:block;
+}
+section.recruit div.merit div.test{
+    display:block;
+	width:100%;
+
+}
+section.recruit div.merit p.img{
+	width:30%;
+	margin:0 5px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+section.recruit div.merit p.text{
+	width:65%;
+	display:inline-block;
+}
+
+
+
+
+
+/*先輩社員------------------------------------------*/
+section.recruit div.voice{
+	width:100%;
+	display:block;
+	padding:15px;
+	border:1px solid #CCC8C8;
+	border-radius: 0.5em;
+	margin-bottom:20px;
+}
+section.recruit div.voice p.img{
+	width:29%;
+	margin-right:10px;
+	display:inline-block;
+	vertical-align:top;
+
+}
+
+section.recruit div.voice div.left{
+	width:65%;
+	display:inline-block;
+}
+
+
+section.recruit div.voice div.left p.spec{
+	font-size:16px;
+	font-weight:bold;
+	border-bottom:2px dotted #6A6969;
+	padding-bottom:5px;
+}
+section.recruit div.voice div.left p.text{
+	padding-top:10px;
+}
+
+
+*/
+div.soudanin{
+	background:#eeeeee;
+	padding:15px 0;
+}
+table{
+	width:95%;
+	display:table;
+	padding:10px;
+	margin:10px;
+	background:#ffffff;
+}
+
+table th{
+padding-top:10px;
+padding-left:10px;
+padding-right:10px;
+display:block;
+font-weight:bold;
+}
+table td{
+padding-bottom:10px;
+padding-left:10px;
+padding-right:10px;
+display:block;
+border-bottom:1px solid #eeeeee;
+}
+
+
+
+
+
+
+
+
+/*----募集要項-----------------------------------------------------------------*/
+
+
+section.essential label {
+    background:#568bc7;
+    color: #fff;
+    padding: 15px;
+    display: block;
+    margin: 0;
+    border: 1px solid #fff;
+	font-weight:500;
+	font-size:14px;
+}
+
+input[type="checkbox"].on-off{
+    display: none;
+}
+
+.menu div.menu {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu div.youkou {
+    padding: 5px;
+}
+
+input[type="checkbox"].on-off + div.menu{
+    height: 0;
+    overflow: hidden;
+}
+
+input[type="checkbox"].on-off:checked + div.menu{
+    height: 630px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accordion input {
+	display: none;
+}
+.accordion label {
+	position: relative;
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+}
+.accordion label::after {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	display: block;
+	content: '';
+	width: 8px;
+	height: 8px;
+	margin-top: -7px;
+	border-top: 1px solid #888;
+	border-right: 1px solid #888;
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+.accordion div {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	box-shadow: 0 1px 7px 0 rgba(0,0,0,0.1) inset;
+	transition: height .2s ease-in-out;
+}
+.accordion input:checked + label::after {
+	margin-top: -3px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.accordion input:checked ~ div {
+	height: 140px;
+	border-bottom: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+/*----フォーム-----------------------------------------------------------------*/
+section.form div.form{
+	margin-top:-30px;
+	padding:10px;
+}
+
+section.form div.form dl dd{
+	color:#233240;
+	font-weight:bold;
+	font-size:14px;
+	background:#ffffff;
+
+}
+
+section.form div.form dl dd ul{
+	display:table;
+}
+
+section.form div.form dl dd ul li{
+	display:table-cel;
+
+}
+input#age{
+	width:80px;
+}
+section.form div.form dl dd.age input{
+	width:45%;
+	height:50px;
+	border:1px solid #000000;
+	border:2px solid #cccccc;
+	border-radius:5px;
+}
+
+
+div.form dt {
+	padding-left:10px;
+	color:#223542;
+	font-size:16px;
+	font-weight:bold;
+	background:#ffffff;
+	margin-top:30px;
+	border-top:1px solid #C3BEBE;
+	padding-top:20px;
+	padding-bottom:5px;
+}
+div.form dl dt.first{
+	border-top: none;
+}
+div.form dt+dt{
+	border-bottom:#C50E11;
+}
+
+dl em{
+	display:inline-block;
+	vertical-align:middle;
+	background: #E90037;
+    font-size: 12px;
+    padding: 2px 10px;
+    margin-left: 10px;
+	color:#ffffff;
+	border-radius:5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="url"], input[type="number"],select,textarea {
+	width:100%;
+	height:50px;
+	background:#eeeeee;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:0.1em;
+	color:#636363;
+		box-sizing:border-box;
+
+
+
+}
+
+textarea {
+	height:150px;
+}
+#age{
+	width:calc( 100% - 2em );
+}
+p.kakunin input{
+	width:100%;
+	margin-top:50px;
+}
+p.button2{
+	margin-bottom:40px;
+}
+section.recruit h3.kakunin{
+	background:#d02044;
+}
+div.formbutton{
+	margin-top:30px;
+}	
+div.formbutton input{
+	width:100%;
+	margin-top:10px;
+}
+
+
+/*--サンクス-----------------------------------------------------------------------*/
+div.thanks h3{
+	color:#d02044;
+	font-size:20px;
+	font-weight:bold;
+	background:none;
+}
+div.thanks p{
+	padding:10px;
+}
+
+
+/*--アコーディオン-----------------------------------------------------------------------*/
+.accordionbox{
+	width: 100%;
+	margin: 10px auto 40px;
+	padding:7px;
+	background:#eeeeee;
+}
+.accordionlist dt{
+    display:block;
+    background: #568bc7;
+    padding: 20px 0 10px 5px;
+    border-top: 1px solid #DFDFDF;
+	color:#ffffff;
+}
+/*
+.accordionlist dt:first-child{
+    border-top: none !important;
+}*/
+.accordionlist dt .title{
+    padding-left: 10px;
+	float: left;
+}
+
+
+.accordionlist dd{
+    display:none;
+	background: #fff;
+	padding:0 0 10px 5px;
+
+}
+/*
+.accordion_icon,
+.accordion_icon span {
+	display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+}*/
+.accordion_icon {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-right: 5px;
+}
+.accordion_icon span {
+	position: absolute;
+    left: 6px;
+    width: 50%;
+	height: 2px;
+    background-color: #254461;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+.accordion_icon span:nth-of-type(1) {
+    top: 5px;
+	transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+.accordion_icon span:nth-of-type(2) {
+    top: 5px;
+	transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+/*＋、－切り替え*/
+/*
+.accordion_icon.active span:nth-of-type(1) {
+	display:none;
+}*/
+
+.accordion_icon.active span:nth-of-type(2) {
+	top: 5px;
+	transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+
+section.essential div.hosoku{
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:-50px;
+	margin-bottom:40px;
+
+}
+section.essential div.hosoku p{
+	padding:0;
+}
+
+
+/*----確認ページ-----------*/
+div.kakuninpage section.form div.form dd{
+	padding-left:10px;
+	color:#797979;
+	padding-bottom:0;
+	margin-top:5px;
+	font-weight:normal;
+
+}
+div.kakuninpage section.form div.form dd.tel a{
+	color:#797979;
+}
+div.kakuninpage section.form div.form dt{
+	margin-top:25px;
+	margin-bottom:0;
+	padding-bottom:0;
+}
+
+@media only screen and (min-width : 450px){
+  .br_sp:before{
+    display: none;
+  }
+  .br_pc:before{
+    content: "\A" ;
+    white-space: pre ;
+    }
+  .sp{
+    display: none;
+  }
+  .pc{
+    display: block;
+  }
+
+  ul.t{
+    margin: 80px 10px;
+    display: table;
+  }
+  ul.t li.t{
+    display: table-cell;
+    width: 64%;
+  }
+  ul.t.contrary{
+    direction: rtl;
+  }
+  ul.t.contrary li.t{
+    direction: ltr;
+  }
+  ul.t li.t.img{
+    padding:80px 10px 0 0;
+    width: auto;
+  }
+.wrapper_min{
+	min-width:710px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.banner .banner_iwaikin{
+	right:-30px;
+	top:-90px;
+	width: auto;
+	height: auto;
+}
+
+section#jobcontent div.investigator{
+	display:block;
+	padding:20px;
+}
+section#jobcontent div.investigator div.back{
+	padding:20px;
+}
+section#jobcontent div.investigator div.midashi{
+	width:656px;
+	padding:0;
+	margin-right:0;
+	display:table;
+	margin-bottom:20px;
+}
+section#jobcontent div.investigator div.midashi h4{
+	width:206px;
+	padding:15px;
+	font-size:20px;
+	font-weight:100;
+	display:table-cell;
+	border:4px solid #233240;
+}
+section#jobcontent div.investigator  div.midashi p.answer{
+	width:440px;
+	padding:10px;
+	font-size:20px;
+	display:table-cell;
+	text-align:left;
+
+}
+
+div.imgtext{
+	width:710px;
+	display:block;
+}
+div.imgtext p.jobimg2{
+	width:200px;
+	display:inline-block;
+}
+
+
+div.imgtext div.text{
+	width:450px;
+	padding-left:0 10px;
+	display:inline-block;
+	vertical-align:top;
+}
+div.imgtext div.text p{
+	font-size:14px;
+}
+
+
+div.imgtext p.sp{
+	display:none;
+}
+
+
+div.back{
+	width:655px;
+
+}
+section#jobcontent{
+	margin-top:30px;
+}
+section#jobcontent div.investigator{
+	margin-top:25px;
+}
+
+
+
+
+section.recruit div.merit{
+	height:200px;
+	padding:20px;
+	margin:0;
+
+}
+section.recruit div.merit{
+	height:240px;
+}
+section.recruit div.merit2{
+	height:190px;
+}
+section.recruit div.merit3{
+	height:220px;
+}
+section.recruit div.merit p.text{
+	width:500px;
+	padding-left:10px;
+	float:left;
+	font-size:14px;
+
+}
+section.recruit div.merit p.img{
+	width:136px;
+	height:136px;
+	float:right;
+	right:0;
+	padding:0;
+	margin-top:-50px;;
+
+}
+.clear {
+
+    clear:both;　/*floatの解除、ここがポイント*/
+
+}
+
+p.button2{
+	margin-top:30px;
+	margin-bottom:70px;
+	text-align:center;
+}
+p.kakunin{
+	text-align:center;
+}
+section.recruit div.senior{
+	margin-top:20px;
+}
+section.recruit div.voice{
+	padding-left:30px;
+}
+section.recruit div.voice p.img{
+	width:132px;
+	margin-right:10px;
+}
+section.recruit div.voice div.left{
+	width:500px;
+}
+section.recruit div.voice div.left p.spec{
+		font-size:20px;
+
+}
+
+/*---募集要項--------------------------------------------------------------------------*/
+
+section.essential ul.table{
+	display:table;
+	width:710px;
+	padding:25px;
+}
+section.essential li.selected{
+	background:#ffffff;
+}
+
+section.essential ul.table li.selected dl {
+  width:650px;
+  padding:10px;
+  height:550px;
+}
+
+section.essential ul.table li.selected dt {
+   float:left;
+   clear:left;
+   padding:20px 0;
+   padding-left:15px;
+   width:110px;
+   border-top:2px solid #eeeeee;
+   font-weight:bold;
+}
+section.essential ul.table li.selected dt.first{
+	border:none;
+}
+section.essential ul.table li.selected dd.first{
+	border:none;
+}
+section.essential ul.table li.selected dd {
+  float:left;
+  width:510px;
+  padding:20px 0;
+  border-top:2px solid #eeeeee;
+}
+ul.table{
+	width:680px;
+	display:table;
+	background:#eeeeee;
+	padding:30px;
+	margin-top:0;
+}
+
+ul.table li{
+	display:none;
+}
+
+
+ul.table.pc li.selected{
+	display:table-cell;
+}
+
+
+div.menu ul li + li {
+  border-left: 2px solid #ffffff;
+}
+
+section.essential div.hosoku{
+	margin-top:40px;
+	padding:0 20px;
+}
+p.bun{
+	padding:0 20px;
+}
+
+/*------------------------------------------------*/
+.tabs {
+    position: relative;
+    padding: 0;
+}
+.tabs li {
+    list-style: none;
+    display: inline-block;
+}
+.tabs input[type=radio] {
+    display: none;
+}
+.tabs label {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 20px;
+    background-color: #568bc7;
+    color: #ffffff;
+}
+.tabs label:hover {
+    background-color: #cccccc;
+    color: #568bc7;
+}
+.tabs input[type=radio]:checked + label {
+    background-color: #eeeeee;
+    color: #000000;
+}
+.tabs .contents {
+    display: none;
+    top:30px;
+    left: 0;
+    padding: 10px;
+    background: #eeeeee;
+}
+.tabs input[type=radio]:checked + label + .contents{
+    display: block;
+}
+
+
+div.menu{
+	width:710px;
+	display:table;
+	table-layout:fixed;
+	margin-bottom:0;
+
+}
+div.menu ul{
+	margin-bottom:0;
+}
+div.menu ul li{
+	color:#ffffff;
+	font-size:15px;
+	text-align:center;
+	vertical-align:middle;
+	width:240px;
+	height:50px;
+	display:table-cell;
+	background-color: #568bc7;
+	padding-left:2px;
+	cursor:pointer;
+
+
+}
+div.menu ul .selected{
+	color:#5896db;
+	font-size:15px;
+	font-weight:600;
+	background:#eeeeee;
+}
+
+
+ul,table.pc .selected{
+	margin-bottom:40px;
+}
+
+
+
+/*----フォーム-----------------------------------------------------------------*/
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="url"], input[type="number"], select, textarea {
+background: #ffffff;
+}
+section.form div.form{
+	padding:0;
+
+}
+section.form div.form dl,dt,dd {
+ margin: 0;
+ padding: 0;
+}
+
+section.form div.form dl {
+ background: #3e5471;
+ border: 1px solid #c9c9c9;
+ border-top: none;
+ width: 100%;
+ overflow: hidden;
+ padding:0;
+ margin-top:60px;
+}
+
+section.form div.form dl dt,
+section.form div.form dl dd {
+ padding: 10px;
+}
+
+
+section.form div.form dl dt {
+ border-top: 1px solid #c9c9c9;
+ clear: left;
+ float: left;
+ width: 200px;
+ color:#ffffff;
+ font-size:13px;
+ font-weight:100;
+  background: #3e5471;
+  display:block;
+  margin-top:0;
+  padding-top:30px;
+  padding-left:15px;
+}
+section.form div.form dl dt label{
+  padding: 0;
+  width: auto;
+}
+
+section.form div.form dl dt em{
+	font-size:11px;
+	padding:1px 10px;
+	margin:0;
+	border-radius:9px;
+}
+
+
+section.form div.form dl dd {
+ background: #eeeeee;
+ border-left: 1px solid #c9c9c9;
+ border-top: 1px solid #c9c9c9;
+ margin-left: 200px;
+ padding:15px 20px;
+ }
+
+section.form div.form dl dd ul{
+	margin-top:10px;
+	font-weight:100;
+}
+
+section.form div.form dl dd.gender{
+	margin-bottom:0;
+}
+
+section.form div.form dl dd ul.radio{
+	width:200px;
+	display:table;
+	margin-bottom:20px;
+}
+
+section.form div.form dl dd.jobtype_id{
+	margin-bottom:0;
+}
+
+section.form div.form dl dd.jobtype_id ul.radio{
+	width:400px;
+	display:table;
+	margin-bottom:20px;
+}
+
+
+
+section.form div.form dl dd ul.radio li{
+	display:table-cell;
+
+}
+section.form div.form dl dd ul input{
+	width:30px;
+}
+
+p.kakunin input{
+	width:457px;
+}
+/*section.form div.form{
+
+	margin-top:20px;
+	background:#3e5471;
+}
+
+.form dl,dt,dd {
+ margin: 0;
+ padding: 0;
+}
+
+.form dl dt,
+.form dl dd {
+ padding: 10px;
+}
+
+
+section.form div.form dl{
+	width:100%;
+	 background: #eeeeee;
+     border: 1px solid #333;
+     border-top: none;
+}
+section.form div.form dt{
+	width:180px;
+	float: left;
+    clear: both;
+	margin-right:0;
+	background:#3e5471;
+	font-size:15px;
+	font-weight:100;
+	color:#ffffff;
+	margin:0;
+	}
+
+
+section.form div.form dt em{
+	font-weight:100;
+	font-size:12px;
+	padding:1px 5px;
+}
+section.form div.form dd{
+	width:490px;
+	padding:25px;
+	float: right;
+	margin-left:0;
+	border:1px solid #000000;
+
+}
+section.form div.form input{
+	background:#eeeeee;
+}
+*/
+
+/*--確認ページ-----------------------------------------------------------------------*/
+
+div.kakuninpage section.form{
+	margin-top:40px;
+}
+div.kakuninpage section.form div.form dl,
+div.kakuninpage section.form div.form dl dt {
+	background:#d02044;
+}
+div.kakuninpage section.form div.form dl{
+	border:1px solid #B9B8B8;
+	list-style-type:none;
+}
+
+div.kakuninpage section.form div.form dl dt{
+	vertical-align:top;
+	padding:20px 15px;
+    margin-top:0;
+	clear:both;
+}
+
+div.kakuninpage section.form div.form dl dd{
+	padding:20px 15px;
+	vertical-align:middle;
+	margin-top:0;
+	min-height:60px;
+}
+
+div.kakuninpage section.form div.form dl dt em{
+	color:#d02044;
+	background:#ffffff;
+	font-weight:bold;
+}
+
+div.kakuninpage section.form div.formbutton input {
+	width:305px;
+}
+
+div.kakuninpage section.form div.formbutton.pc{
+	display:block;
+}
+div.kakuninpage section.form div.formbutton.pc p{
+	display:inline-block;
+	margin:0 10px;
+}
+
+
+/*--サンクス-----------------------------------------------------------------------*/
+div.thanks h3{
+	margin-top:60px;
+	color:#d02044;
+	font-size:24px;
+	font-weight:bold;
+	background:none;
+}
+div.thanks p{
+	padding:10px;
+	text-align:center;
+}
+
+}

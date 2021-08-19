@@ -28,19 +28,13 @@
 	</div>
 </section>
 
-<!-- カルーセルスライダー -->
-<section class="bg_white">
-<?php echo do_shortcode('[sp_wpcarousel id="132"]'); ?>
-</section>
-
 <section class="service bg_gray" id="service">
 	<div class="container wrapper">
 		<h2 class="main_title">Service<span class="main_title--sub">事業内容</span></h2>
 		<ul class="service__card">
 			<li class="service_card__item">
-				<figure class="service_card__image_wrapper"><im
+				<figure class="service_card__image_wrapper"><img class="service_card__image" src="<?php echo $themePath; ?>image/card_image.jpg" alt="ここに画像が入ります。"></figure>
 					<h3 class="service_card__title">見出しテキスト</h3>
-					<figure class="service_card__image_wrapper"><img class="service_card__image" src="<?php echo $themePath; ?>image/card_image.jpg" alt="ここに画像が入ります。"></figure>
 				<div class="service_card__body">1行推奨30〜35文字のテキストが入ります。ここには1行推奨30〜35文字のテキストが入ります。</p>
 				</div>
 			</li>
@@ -72,9 +66,9 @@
 	<div class="container wrapper">
 		<h2 class="main_title">News<span class="main_title--sub">ニュース</span></h2>
 		<ul class="news__list">
-
 			<?php
 				$args = array(
+					'post_type' => 'topic',
 					'posts_per_page' => 3
 				);
 				$posts = get_posts( $args );
@@ -83,29 +77,19 @@
 				$linkUrl = get_post_meta($postId, 'link_url', true);
 				setup_postdata( $post );
 			?>
-			<?php if(empty($linkUrl)) : ?>
 			<li class="news_list__item">
-				<span class="news_list__inner">
-					<time class="news_list__date"><?php the_time( 'Y.m.d' ); ?></time>
-					<p class="news_list__text"><?php the_title();?></p>
-				</span>
-			</li>
-			<?php else : ?>
-			<li class="news_list__item">
-				<a class="news_list__link" href="<?php echo $linkUrl; ?>">
+				<a class="news_list__link" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
 					<time class="news_list__date"><?php the_time( 'Y.m.d' ); ?></time>
 					<p class="news_list__text"><?php the_title();?></p>
 				</a>
 			</li>
-			<?php endif; ?>
 
 			<?php
 				endforeach;
 				wp_reset_postdata();
 			?>
 		</ul>
-
-		<a class="main_button" href="<?php bloginfo('url');?>/topic">View More</a>
+		<a class="main_button" href="<?php bloginfo('url');?>/topic">ニュース一覧</a>
 	</div>
 </section>
 <section class="contact theme_color">
